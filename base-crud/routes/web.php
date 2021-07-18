@@ -23,7 +23,7 @@ Route::get('/', function () {
 
 ((posts = index ; post = show))
 
-Sette routes restful:
+SETTE ROUTES RESTFUL:
 
 GET posts/ -> read risorsa dal database (1)
 
@@ -66,7 +66,7 @@ NomeController +
 
 /*
 
-Route::((get))("URI", "NameController@command")->name();
+Route::((get))("URI", "NameController@command")->name("index.etc");
 
 */
 

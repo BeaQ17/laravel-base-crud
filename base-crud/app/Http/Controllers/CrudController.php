@@ -13,8 +13,24 @@ class CrudController extends Controller
      */
     public function index()
     {
-        //
+        $issues = Issue::all();
+        return view("index", compact("issues"));
     }
+
+
+
+/**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Issue $issue)
+    {
+        //ddd($issues);
+        return view("show", compact("issue"));
+    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -37,16 +53,6 @@ class CrudController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.
