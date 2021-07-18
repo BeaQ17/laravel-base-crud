@@ -13,6 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+/*
+
+((posts = index ; post = show))
+
+Sette routes restful:
+
+GET posts/ -> read risorsa dal database
+
+GET posts/{post} -> read etc
+
+GET posts/create -> crea risorsa (tramite form)
+
+POST posts -> salva risorsa nel database (redirect)
+
+GET posts/{post}/edit -> modifica risorsa (tramite form)
+
+PUT/PATCH posts/{post} -> aggiorna risorsa nel database
+
+DELETE posts/{post} -> cancella risorsa
+
+*/
+
