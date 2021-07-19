@@ -71,11 +71,12 @@ Route::((get))("URI", "NameController@command")->name("index.etc");
 */
 
 
-Route::get("issues", "CrudController@index")->name("issues");
-Route::get("", "CrudController@show")->name("issues.show");
-Route::get("", "CrudController@create")->name("issues.create");
-Route::post("", "CrudController@store")->name("issues.store");
-Route::get("", "CrudController@edit")->name("issues.edit");
-Route::put("", "CrudController@update")->name("issues.update");
-Route::delete("", "CrudController@destroy")->name("issues.delete");
+// Route::get("issues", "CrudController@index")->name("issues");
+// Route::get("show", "CrudController@show")->name("issues.show");
+// Route::get("create", "CrudController@create")->name("issues.create");
+// Route::post("", "CrudController@store")->name("issues.store");
+// Route::get("", "CrudController@edit")->name("issues.edit");
+// Route::put("", "CrudController@update")->name("issues.update");
+// Route::delete("", "CrudController@destroy")->name("issues.delete");
 
+Route::resource('issue', 'CrudController');
